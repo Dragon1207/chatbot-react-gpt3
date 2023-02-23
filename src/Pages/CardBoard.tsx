@@ -6,7 +6,8 @@ import { Configuration, OpenAIApi } from "openai";
 import "../App.css";
 
 const ChatBoard = () => {
-  const storedApiKey = "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";
+  // const storedApiKey = "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";
+  const storedApiKey = "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";
   const { messages, appendMsg, setTyping } = useMessages([]);
   const [openai, setOpenai] = useState(
     new OpenAIApi(new Configuration({ apiKey: storedApiKey }))
@@ -71,7 +72,7 @@ const ChatBoard = () => {
       renderMessageContent={renderMessageContent}
       onSend={handleSend}
       locale="en"
-      placeholder="Type a message"
+      placeholder="Jenkins Testing..."
     />
   );
 };
